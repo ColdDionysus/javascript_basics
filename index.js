@@ -65,6 +65,29 @@
 //sort, concat, join, slice, splice, foreach
 
 
+// const persons = [
+//     {name: "ram", age: 54},
+//     {name: "shyam", age: 24},
+//     {name: "hari", age: 34},
+//     {name: "gopal", age: 44},
+//     {name: "suman", age: 34}
+// ]
+
+
+
+// const age = persons.sort((a,b) => a.age - b.age)
+
+// console.log(age)
+
+// const newPersons = persons.map(persons => persons.name) //Important array map final technique
+
+// console.log({ newPersons })
+
+// const find = persons.find(persons.name)
+
+// console.log(find)
+// Destructure
+
 const persons = [
     {name: "ram", age: 54},
     {name: "shyam", age: 24},
@@ -73,10 +96,9 @@ const persons = [
     {name: "suman", age: 34}
 ]
 
-const age = persons.sort((a,b) => a.age - b.age)
+///... in destructure is spread operator(...) --- 
+//for array use []//to destructure
+//for object use {}
+const  [first, ...rest ] = persons
 
-console.log(age)
-
-const newPersons = persons.map(persons => persons.name) //Important array map final technique
-
-console.log({ newPersons })
+console.log({ rest })
